@@ -1,0 +1,15 @@
+fernetKey : WVFIMG0xSER1YkNKQWFXTVU1RUdUc1lxVjh5Z1dmTFI=    
+webserverSecretKey : WVFIMG0xSER1YkNKQWFXTVU1RUdUc1lxVjh5Z1dmTFI=    
+executors : "KubernetesExecutor"  
+
+postgresql:
+  enabled: false
+
+data:
+  metadataConnection:
+    user: airflow
+    pass: airflow
+    protocol: postgresql
+    host: host.docker.internal
+    port: 5432
+    db: airflow
