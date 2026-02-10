@@ -3,7 +3,7 @@ from airflow.operators.bash import BashOperator
 from datetime import datetime, timedelta 
 
 default_args = {
-    'owner': 'datamasterylab',
+    'owner': 'datamasterylab.com',
     'start_date' : datetime(2026, 9, 2),
     'catchup' : 'False'
 }
@@ -25,3 +25,5 @@ t1 = BashOperator(
     bash_command = 'echo "Hello World"',
     dag = dag
 )
+
+t1 >> t2
