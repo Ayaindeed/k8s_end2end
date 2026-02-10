@@ -11,7 +11,7 @@ def get_date(**kwargs):
     response = requests.get(url)
 
 
-    if requests.status_code == 200:
+    if response.status_code == 200:
         df = pd.read_csv(url, header=None, names=['tourn_type', 'tourn_name', 'tourn_id'])
 
         json_data = df.to_json(orient='records')
@@ -60,6 +60,7 @@ preview_data_from_url = PythonOperator(
 )
 
 get_data_from_url >> preview_data_from_url
+
 
 
 
