@@ -60,7 +60,3 @@ preview_data_from_url = PythonOperator(
 )
 
 get_data_from_url >> preview_data_from_url
-
-
-
-
