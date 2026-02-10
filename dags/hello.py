@@ -14,13 +14,13 @@ dag = DAG (
     schedule = timedelta(days = 1)
 )
 
-t2 = BashOperator(
+t1 = BashOperator(
     task_id = 'print_hello',
     bash_command = 'echo "Hello World"',
     dag = dag
 )
 
-t1 = BashOperator(
+t2 = BashOperator(
     task_id = 'print_dml',
     bash_command = 'echo "Hello World"',
     dag = dag
