@@ -1,6 +1,7 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 import requests
+import json
 import pandas as pd 
 from datetime import datetime, timedelta 
 
@@ -59,4 +60,5 @@ preview_data_from_url = PythonOperator(
 )
 
 get_data_from_url >> preview_data_from_url
+
 
