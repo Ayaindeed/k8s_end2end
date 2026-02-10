@@ -38,7 +38,7 @@ def preview_data(**kwargs):
 default_args = {
     'owner': 'datamasterylab.com',
     'start_date' : datetime(2026, 9, 2),
-    'catchup' : 'False'
+    'catchup' : False
 }
 
 dag = DAG (
@@ -60,5 +60,6 @@ preview_data_from_url = PythonOperator(
 )
 
 get_data_from_url >> preview_data_from_url
+
 
 
