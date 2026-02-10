@@ -54,8 +54,9 @@ get_data_from_url = PythonOperator(
 
 preview_data_from_url = PythonOperator(
     task_id = 'preview_data',
-    python_callable = preview_data
+    python_callable = preview_data,
     dag = dag 
 )
 
 get_data_from_url >> preview_data_from_url
+
