@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 default_args = {
     'owner': 'datamasterylab.com',
     'start_date' : datetime(2026, 9, 2),
-    'catchup' : 'False'
+    'catchup' : False
 }
 
 dag = DAG (
@@ -20,7 +20,7 @@ t1 = BashOperator(
     dag = dag
 )
 
-t1 = BashOperator(
+t2 = BashOperator(
     task_id = 'print_dml',
     bash_command = 'echo "Hello World"',
     dag = dag

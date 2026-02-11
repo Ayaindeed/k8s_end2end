@@ -1,6 +1,7 @@
-fernetKey : WVFIMG0xSER1YkNKQWFXTVU1RUdUc1lxVjh5Z1dmTFI=    
-webserverSecretKey : WVFIMG0xSER1YkNKQWFXTVU1RUdUc1lxVjh5Z1dmTFI=    
-executors : "KubernetesExecutor"  
+fernetKey : "your-fernet-key"  
+webserverSecretKey : "your-webserver-secret-key"    
+executor: "KubernetesExecutor"
+
 
 postgresql:
   enabled: false
