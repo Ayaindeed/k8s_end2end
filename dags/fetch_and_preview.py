@@ -31,7 +31,7 @@ def preview_data(**kwargs):
     df = pd.DataFrame(output_data)
     
     print(df.head())
-    
+
 
 
 
