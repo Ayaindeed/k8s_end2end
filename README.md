@@ -1,8 +1,8 @@
-# Airflow on Kubernetes - Production Deployment
+# Kubernetes-Native Data Orchestration: Building Scalable Airflow Pipelines
 
 This repository contains the complete configuration and DAGs for deploying Apache Airflow on Kubernetes using Helm.
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 ├── dags/                      # Airflow DAG files
@@ -15,7 +15,7 @@ This repository contains the complete configuration and DAGs for deploying Apach
 │   └── values.yaml           # Helm values for Airflow deployment
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Docker Desktop with Kubernetes enabled
@@ -61,11 +61,11 @@ This repository contains the complete configuration and DAGs for deploying Apach
    ```
    Visit: http://localhost:8080
 
-## 📝 DAG Development
+## DAG Development
 
 All DAGs are stored in the `/dags` folder and synchronized automatically via GitSync when configured in `values.yaml`.
 
-## 🔧 Configuration
+## Configuration
 
 Edit `k8s/values.yaml` to customize:
 - Executor type (CeleryExecutor/KubernetesExecutor)
@@ -73,13 +73,6 @@ Edit `k8s/values.yaml` to customize:
 - GitSync repository configuration
 - Resource limits and scaling
 
-## 📚 Documentation
+## Documentation
 
 For detailed setup instructions and architecture overview, see the accompanying article.
-
-## 🔐 Security Notes
-
-- Never commit secrets to this repository
-- Use Kubernetes Secrets for sensitive data
-- Rotate Fernet keys regularly
-- Enable RBAC for production deployments
