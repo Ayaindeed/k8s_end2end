@@ -75,4 +75,4 @@ Edit `k8s/values.yaml` to customize:
 
 ## Documentation
 
-For detailed setup instructions and architecture overview, see the accompanying article.
+For detailed setup instructions and architecture overview, see the accompanying [article](https://medium.com/@aya.space/kubernetes-native-data-orchestration-building-scalable-airflow-pipelines-270f3519abb7)
